@@ -67,6 +67,8 @@ $section-padding: 100px 0px;
     transition: transform 0.1s linear;
 }
 
+/* Styles generaux */
+
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: $light-color;
@@ -199,6 +201,7 @@ section {
     background-repeat: no-repeat;
     background-blend-mode: multiply;
     background-image: url("../img/imageHeader.jpg");
+    background-attachment: fixed;
 
     .header-content {
         width: 100%;
@@ -444,7 +447,7 @@ section {
     align-items: center;
 
     .cta-arrow {
-        animation-delay: 1.2s;
+        animation-delay: 1s;
     }
 
     .shapes {
@@ -466,7 +469,7 @@ section {
         }
 
         .section-title {
-            animation-delay: 0.8s;
+            animation-delay: 1s;
         }
 
         .btn {
@@ -483,7 +486,7 @@ footer {
     display: flex;
     flex-direction: row;
     column-gap: 4%;
-    min-height: 300px;
+    min-height: 350px;
     padding-top: 100px;
     padding-left: 200px;
     background-position: center;

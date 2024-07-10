@@ -11936,6 +11936,7 @@ textarea.form-control-lg {
   transition: transform 0.1s linear;
 }
 
+/* Styles generaux */
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #BFCAD3;
@@ -12086,6 +12087,7 @@ section {
   background-repeat: no-repeat;
   background-blend-mode: multiply;
   background-image: url("../img/imageHeader.jpg");
+  background-attachment: fixed;
 }
 .header-home .header-content {
   width: 100%;
@@ -12292,7 +12294,7 @@ section {
   align-items: center;
 }
 .cta-contact .cta-arrow {
-  animation-delay: 1.2s;
+  animation-delay: 1s;
 }
 .cta-contact .shapes {
   flex: 1;
@@ -12311,7 +12313,7 @@ section {
   row-gap: 20px;
 }
 .cta-contact .content .section-title {
-  animation-delay: 0.8s;
+  animation-delay: 1s;
 }
 .cta-contact .content .btn {
   width: fit-content;
@@ -12324,7 +12326,7 @@ footer {
   display: flex;
   flex-direction: row;
   column-gap: 4%;
-  min-height: 300px;
+  min-height: 350px;
   padding-top: 100px;
   padding-left: 200px;
   background-position: center;
