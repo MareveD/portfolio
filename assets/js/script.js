@@ -124,7 +124,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 /* Ajustement du base url */
 document.addEventListener('DOMContentLoaded', () => {
-    const baseUrl = window.location.origin; // Get the base URL
+    // const baseUrl = window.location.origin; // Get the base URL when I am local
+    const baseUrl = 'https://mareved.github.io/portfolio'; // Replace with your GitHub Pages URL
     const links = document.querySelectorAll('.home-portfolio a[data-path]');
 
     links.forEach(link => {
