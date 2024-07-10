@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 /* ------------------------------------------------------------------------------ */
 
-/* Accueil : Experience */
+/* Accueil : Section Experience */
 
 document.addEventListener('DOMContentLoaded', () => {
     const options = {
@@ -99,6 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
 /* ------------------------------------------------------------------------------ */
 
 /* Animations en general */
+
 document.addEventListener('DOMContentLoaded', () => {
     const elements = document.querySelectorAll('.shape, .caption, .btn-arrow, .section-title, .cta-arrow');
     const options = {
@@ -123,9 +124,10 @@ document.addEventListener('DOMContentLoaded', () => {
 /* ------------------------------------------------------------------------------ */
 
 /* Ajustement du base url */
+
 document.addEventListener('DOMContentLoaded', () => {
     // const baseUrl = window.location.origin; // Get the base URL when I am local
-    const baseUrl = 'https://mareved.github.io/portfolio'; // Replace with your GitHub Pages URL
+    const baseUrl = 'https://mareved.github.io/portfolio';
     const links = document.querySelectorAll('.home-portfolio a[data-path]');
 
     links.forEach(link => {
