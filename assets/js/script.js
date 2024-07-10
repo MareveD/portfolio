@@ -119,3 +119,16 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(element);
     });
 });
+
+/* ------------------------------------------------------------------------------ */
+
+/* Ajustement du base url */
+document.addEventListener('DOMContentLoaded', () => {
+    const baseUrl = window.location.origin; // Get the base URL
+    const links = document.querySelectorAll('.home-portfolio a[data-path]');
+
+    links.forEach(link => {
+        const path = link.getAttribute('data-path');
+        link.setAttribute('href', `${baseUrl}/${path}`);
+    });
+});
