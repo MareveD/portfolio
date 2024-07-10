@@ -128,10 +128,12 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', () => {
     // const baseUrl = window.location.origin; // Get the base URL when I am local
     const baseUrl = 'https://mareved.github.io/portfolio';
-    const links = document.querySelectorAll('.home-portfolio a[data-path]');
-
-    links.forEach(link => {
-        const path = link.getAttribute('data-path');
-        link.setAttribute('href', `${baseUrl}/${path}`);
+    const sections = ['.home-portfolio', '.home-intro', '.cta-contact'];
+    sections.forEach(section => {
+        const links = document.querySelectorAll(`${section} a[data-path]`);
+        links.forEach(link => {
+            const path = link.getAttribute('data-path');
+            link.setAttribute('href', `${baseUrl}/${path}`);
+        });
     });
 });
