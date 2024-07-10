@@ -5,28 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mareve Design</title>
+
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 
 <body>
 
-    <header class="header-home">
-        <nav class="main-navigation">
+    <header class="header-home bg-dark">
+        <nav class="main-navigation" style="display: none;">
             <div class="nav-logo">
                 <img src="" alt="logo">
                 <img src="" alt="shape">
             </div>
-
             <div class="navigation">
-
                 <a href="#" class="btn-close">X</a>
-
                 <div class="header-menu">
                     <a href="/a-propos">À propos</a>
                     <a href="/expertise">expertise</a>
                     <a href="/portfolio">portfolio</a>
                     <a href="/contact">contact</a>
                 </div>
-
                 <div class="social-media">
                     <a href="#">Courriel</a>
                     <a href="#">LinkedIn</a>
@@ -36,125 +34,149 @@
             </div>
         </nav>
 
-        <div class="shape">
-            <img src="" alt="shapes">
+        <div class="shapes">
+            <img id="shape1" src="assets/img/header_poly_1.svg" alt="polygone un">
+            <img id="shape2" src="assets/img/header_poly_2.svg" alt="polygone deux">
         </div>
 
-        <div class="header-home-img"></div>
-
         <div class="header-content">
-            <h1>matérialisez vos idées.</h1>
 
-            <div class="logo">
-                <img src="" alt="logo Mareve Design">
-                <img src="" alt="arrow header">
+            <div class="content">
+                <h1 class="header-title coul-light">matérialisez <br> vos idées.</h1>
+                <div class="logo">
+                    <img class="logo-image" src="assets/img/Logo_orange.svg" alt="logo Mareve Design">
+                    <img class="logo-arrow" src="assets/img/Logo_orange_arrow.svg" alt="arrow header">
+                </div>
+
             </div>
         </div>
     </header>
 
-    <section class="home-intro">
+    <section class="home-intro bg-light">
+        <div class="container">
 
-        <div class="intro-content">
-            <h2>Salut! Moi, c’est Marie-Eve!</h2>
-            <p>Je suis une développeuse web front-end passionnée en plus d'être une designer web + graphique, créative
-                et
-                curieuse qui plonge dans tous ses projets. 
+            <div class="intro-content">
+                <h2 class="coul-accent">salut! moi, <br> c’est Marie-Eve!</h2>
+                <p class="coul-dark">Je suis une développeuse web front-end passionnée en plus d'être une designer web +
+                    graphique, créative et curieuse quiplonge dans tous ses projets.</p>
+                <p class="coul-dark">Avant de passer au code en 2021, j'ai été plus de 16 ans à explorer le monde du
+                    design graphique, une aventure que j'ai commencée après avoir gradué en 2008. En plus du design, je
+                    compte plusieurs autres
+                    cordes à mon arc, comme l'illustration et la gestion de projet. </p>
+                <p class="coul-dark">Mon parcours diversifié me permet d'apporter une touche unique et créative à chaque
+                    projet.</p>
+                <h4 class="text-emphase coul-accent">Explorons ensemble!</h4>
 
-                Avant de passer au code en 2021, j'ai été plus de 16 ans à explorer le monde du design graphique, une
-                aventure que j'ai commencée après avoir gradué en 2008. En plus du design, je compte plusieurs autres
-                cordes à mon arc, comme l'illustration et la gestion de projet. 
 
-                Mon parcours diversifié me permet d'apporter une touche unique et créative à chaque projet. 
-
-                <h4 class="text-emphase">Explorons ensemble!</h4>
-            </p>
-
-            <a href="#" target="" class="btn btn-dark">Savoir <span>+</span></a>
+                <a href="#" target="" class="btn btn-dark">Savoir <span>+</span></a>
+            </div>
         </div>
 
-        <div class="shape">
-            <img src="" alt="shapes">
+        <div class="shapes">
+            <img id="shape3" class="shape" src="assets/img/intro_poly_1.svg" alt="polygone trois">
         </div>
 
-        <div class="portrait">
-            <img src="" alt="portrait Mareve">
-            <img src="" alt="shape">
-            <img src="" alt="arrow">
-            <p>ça c’est moi!</p>
+        <div id="portrait1" class="portrait">
+            <img class="portrait-me" src="assets/img/portrait-me.png" alt="portrait Mareve">
+            <img class="shape" src="assets/img/intro_poly_2.svg" alt="shape">
+            <div class="arrow">
+                <img class="arrow-shape" src="assets/img/intro_arrow1.svg" alt="arrow">
+                <p class="coul-accent">ça c’est moi!</p>
+            </div>
         </div>
 
-        <div class="portrait">
-            <img src="" alt="portrait Salem">
-            <img src="" alt="shape">
-            <img src="" alt="arrow">
-            <p>mon associé, Salem le chat</p>
+        <div id="portrait2" class="portrait">
+            <img class="portrait-salem" src="assets/img/portrait-salem.png" alt="portrait Salem">
+            <img class="shape" src="assets/img/intro_poly_3.svg" alt="shape">
+            <div class="arrow">
+                <img class="arrow-shape" src="assets/img/intro_arrow2.svg" alt="arrow">
+                <p class="coul-accent">mon associé, <br> Salem le chat</p>
+            </div>
         </div>
     </section>
 
-    <section class="home-portfolio">
-        <h2>portfolio</h2>
-        <a href="/web" target="" class="btn btn-arrow">web <span><img src="" alt="arrow"></span></a>
-        <a href="/graphisme" target="" class="btn btn-arrow">branding + graphisme <span><img src=""
-                    alt="arrow"></span></a>
-        <a href="/illustration" target="" class="btn btn-arrow">illustration <span><img src="" alt="arrow"></span></a>
+
+    <section class="home-portfolio bg-dark">
+        <div class="content container">
+            <h2 class="coul-accent">portfolio</h2>
+            <a href="/web" target="" class="btn btn-arrow coul-light hover-white">web <span class="arrow"><svg
+                        width="121" height="43" viewBox="0 0 121 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 21.5H119M119 21.5L93.8505 1M119 21.5L93.8505 42" stroke="#ED7745"
+                            stroke-width="2" />
+                    </svg></span></a>
+            <a href="/graphisme" target="" class="btn btn-arrow coul-light hover-white">branding + graphisme <span
+                    class="arrow"><svg width="121" height="43" viewBox="0 0 121 43" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 21.5H119M119 21.5L93.8505 1M119 21.5L93.8505 42" stroke="#ED7745"
+                            stroke-width="2" />
+                    </svg></span></a>
+            <a href="/illustration" target="" class="btn btn-arrow coul-light hover-white">illustration <span
+                    class="arrow"><svg width="121" height="43" viewBox="0 0 121 43" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 21.5H119M119 21.5L93.8505 1M119 21.5L93.8505 42" stroke="#ED7745"
+                            stroke-width="2" />
+                    </svg></span></a>
+        </div>
     </section>
 
-    <section class="home-experience">
-        <div class="experience-top">
+    <section class="home-experience bg-accent">
+        <div class="experience-top coul-light">
             <h2>vous retrouverez</h2>
-            <hr class="hr-right">
+            <div class="border-right"></div>
         </div>
 
-        <div class="experience-blocks">
-            <div class="block">
+        <div class="blocks container">
+            <div class="block coul-white">
                 <h3>2</h3>
-                <p>années en développement web & intégration WordPress</p>
+                <h4>années <br> en développement web <br> & intégration WordPress</h4>
             </div>
 
-            <div class="block">
+            <div class="block coul-white">
                 <h3>16</h3>
-                <p>années en graphisme & branding</p>
+                <h4>années <br> en graphisme <br> & branding</h4>
             </div>
 
-            <div class="block">
+            <div class="block coul-white">
                 <h3>16</h3>
-                <p>années en illustration digitale</p>
+                <h4>années <br> en illustration <br> digitale</h4>
             </div>
         </div>
 
-        <div class="experience-bottom">
-            <hr class="hr-left">
+        <div class="experience-bottom coul-light">
+            <div class="border-left"></div>
             <h2>en expérience</h2>
         </div>
     </section>
 
-    <section class="cta-contact">
+    <section class="cta-contact bg-dark">
 
-        <div class="shape">
-            <img src="" alt="shapes">
-        </div>
+        <div class="container">
+            <div class="shape">
+                <img src="" alt="shapes">
+            </div>
 
-        <div class="arrow">
-            <img src="" alt="arrow cta">
-        </div>
+            <div class="arrow">
+                <img src="" alt="arrow cta">
+            </div>
 
-        <div class="contact-info">
-            <h2>vous avez un projet en tête ou des questions?</h2>
-            <p>N'hésitez pas à me contacter! Ensemble, nous pouvons créer quelque chose de shapeidable. Cliquez sur le
-                bouton ci-dessous pour démarrer la conversation.</p>
-            <a href="#" target="" class="btn btn-light">Contactez <span>Moi</span></a>
+            <div class="contact-info">
+                <h2 class="coul-accent">vous avez un projet en tête ou des questions?</h2>
+                <p class="coul-white">N'hésitez pas à me contacter! Ensemble, nous pouvons créer quelque chose de
+                    shapeidable.Cliquez sur
+                    le
+                    bouton ci-dessous pour démarrer la conversation.</p>
+                <a href="#" target="" class="btn btn-light">Contactez <span>Moi</span></a>
+            </div>
         </div>
     </section>
 
-    <footer>
-
+    <footer class="bg-dark">
         <div class="footer-logo">
             <img src="" alt="logo">
             <img src="" alt="shape">
         </div>
 
         <div class="footer-content">
-
             <div class="footer-menu">
                 <div class="menu">
                     <a href="/a-propos">À propos</a>
@@ -178,10 +200,9 @@
             <div class="footer-copyright">
                 <p>2024 © Mareve Design. Tous droits réservés.</p>
             </div>
-
         </div>
 
-
+        <script src="assets/js/script.js"></script>
     </footer>
 
 </body>
