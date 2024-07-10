@@ -8,6 +8,7 @@ $light-color: #BFCAD3;
 $white-color: #DCE6EE;
 $section-padding: 100px 0px;
 
+/* animations */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -17,6 +18,17 @@ $section-padding: 100px 0px;
     }
 }
 
+.animated-element {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.animate-fadeIn {
+    animation: fadeIn 0.5s forwards;
+    animation-delay: 0.5s;
+}
+
+/* custom colors */
 .coul-accent {color: $accent-color !important;}
 .coul-dark {color: $dark-color !important;}
 .coul-light {color: $light-color !important;}
@@ -302,12 +314,6 @@ section {
 
             p {
                 top: 15px;
-                opacity: 0;
-            }
-
-            .caption {
-                animation: fadeIn 0.5s forwards;
-                animation-delay: 3s;
             }
         }
     }
@@ -327,12 +333,6 @@ section {
 
             p {
                 bottom: -15px;
-                opacity: 0;
-            }
-
-            .caption {
-                animation: fadeIn 0.5s forwards;
-                animation-delay: 3s;
             }
         }
     }
@@ -368,12 +368,6 @@ section {
             left: 0;
             width: 100%;
             height: 100%;
-            opacity: 0;
-        }
-
-        .shape {
-            animation: fadeIn 1s forwards;
-            animation-delay: 3s;
         }
     }
 }
@@ -513,7 +507,7 @@ footer {
             width: 650px;
             height: 650px;
 
-            .shape {
+            .shape-footer {
                 position: absolute;
                 top: 0;
                 right: 0;

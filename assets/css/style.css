@@ -11845,6 +11845,7 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+/* animations */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -11853,6 +11854,17 @@ textarea.form-control-lg {
     opacity: 1;
   }
 }
+.animated-element {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s forwards;
+  animation-delay: 0.5s;
+}
+
+/* custom colors */
 .coul-accent {
   color: #ED7745 !important;
 }
@@ -12172,11 +12184,6 @@ section {
 }
 .home-intro .portrait:has(.portrait-me) .arrow p {
   top: 15px;
-  opacity: 0;
-}
-.home-intro .portrait:has(.portrait-me) .arrow .caption {
-  animation: fadeIn 0.5s forwards;
-  animation-delay: 3s;
 }
 .home-intro .portrait:has(.portrait-salem) {
   right: 150px;
@@ -12192,11 +12199,6 @@ section {
 }
 .home-intro .portrait:has(.portrait-salem) .arrow p {
   bottom: -15px;
-  opacity: 0;
-}
-.home-intro .portrait:has(.portrait-salem) .arrow .caption {
-  animation: fadeIn 0.5s forwards;
-  animation-delay: 3s;
 }
 .home-intro .container {
   display: flex;
@@ -12226,11 +12228,6 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 0;
-}
-.home-intro .shapes .shape {
-  animation: fadeIn 1s forwards;
-  animation-delay: 3s;
 }
 
 /* Accueil - Expérience */
@@ -12352,7 +12349,7 @@ footer .footer-logo .shapes {
   width: 650px;
   height: 650px;
 }
-footer .footer-logo .shapes .shape {
+footer .footer-logo .shapes .shape-footer {
   position: absolute;
   top: 0;
   right: 0;
