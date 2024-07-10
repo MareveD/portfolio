@@ -11969,6 +11969,44 @@ p {
   font-weight: 900;
 }
 
+.bouton {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  align-items: center;
+}
+.bouton span {
+  font-weight: 700;
+  padding: 2px 8px;
+  border: 1px solid #ED7745;
+  transform: skew(-15deg);
+  display: inline-block;
+  font-size: 24px;
+}
+
+.btn-dark {
+  color: #0E2B36;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn-dark:hover {
+  color: #ED7745;
+}
+
+.btn-light {
+  color: #BFCAD3;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn-light:hover {
+  color: #ED7745;
+}
+
 .btn-arrow {
   font-family: "Montserrat", sans-serif;
   font-weight: 200;
@@ -12128,6 +12166,11 @@ section {
 }
 .home-intro .portrait:has(.portrait-me) .arrow p {
   top: 15px;
+  opacity: 0;
+}
+.home-intro .portrait:has(.portrait-me) .arrow .caption {
+  animation: fadeIn 0.5s forwards;
+  animation-delay: 3s;
 }
 .home-intro .portrait:has(.portrait-salem) {
   right: 150px;
@@ -12143,6 +12186,11 @@ section {
 }
 .home-intro .portrait:has(.portrait-salem) .arrow p {
   bottom: -15px;
+  opacity: 0;
+}
+.home-intro .portrait:has(.portrait-salem) .arrow .caption {
+  animation: fadeIn 0.5s forwards;
+  animation-delay: 3s;
 }
 .home-intro .container {
   display: flex;

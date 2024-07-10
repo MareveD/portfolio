@@ -80,6 +80,45 @@ p {
     font-weight: 900;
 }
 
+.bouton {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    align-items: center;
+
+    span {
+        font-weight: 700;
+        padding: 2px 8px;
+        border: 1px solid $accent-color;
+        transform: skew(-15deg);
+        display: inline-block;
+        font-size: 24px;
+    }
+}
+
+.btn-dark {
+    color: $dark-color;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn-dark:hover {
+    color: $accent-color;
+}
+
+.btn-light {
+    color: $light-color;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn-light:hover {
+    color: $accent-color;
+}
+
 .btn-arrow {
     font-family: 'Montserrat', sans-serif;
     font-weight: 200;
@@ -256,6 +295,12 @@ section {
 
             p {
                 top: 15px;
+                opacity: 0;
+            }
+
+            .caption {
+                animation: fadeIn 0.5s forwards;
+                animation-delay: 3s;
             }
         }
     }
@@ -275,6 +320,12 @@ section {
 
             p {
                 bottom: -15px;
+                opacity: 0;
+            }
+
+            .caption {
+                animation: fadeIn 0.5s forwards;
+                animation-delay: 3s;
             }
         }
     }
