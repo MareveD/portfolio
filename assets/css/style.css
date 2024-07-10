@@ -12060,6 +12060,7 @@ section {
   position: relative;
   background-blend-mode: multiply;
   background-image: url("../img/noise_bg_cropped_50.jpg");
+  background-attachment: fixed;
 }
 
 .container {
@@ -12333,6 +12334,7 @@ footer {
   background-repeat: no-repeat;
   background-blend-mode: multiply;
   background-image: url("../img/noise_bg_cropped_50.jpg");
+  background-attachment: fixed;
 }
 footer .footer-logo {
   width: 650px;
