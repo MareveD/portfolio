@@ -12291,6 +12291,9 @@ section {
   justify-content: space-between;
   align-items: center;
 }
+.cta-contact .cta-arrow {
+  animation-delay: 1.2s;
+}
 .cta-contact .shapes {
   flex: 1;
 }
@@ -12306,6 +12309,9 @@ section {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
+}
+.cta-contact .content .section-title {
+  animation-delay: 0.8s;
 }
 .cta-contact .content .btn {
   width: fit-content;

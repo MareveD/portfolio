@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 /* Animations en general */
 document.addEventListener('DOMContentLoaded', () => {
-    const elements = document.querySelectorAll('.intro-title, .shape, .caption');
+    const elements = document.querySelectorAll('.shape, .caption, .btn-arrow, .section-title, .cta-arrow');
     const options = {
         threshold: 0.5
     };

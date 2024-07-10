@@ -443,6 +443,10 @@ section {
     justify-content: space-between;
     align-items: center;
 
+    .cta-arrow {
+        animation-delay: 1.2s;
+    }
+
     .shapes {
         flex: 1;
     }
@@ -459,6 +463,10 @@ section {
             display: flex;
             flex-direction: column;
             row-gap: 20px;
+        }
+
+        .section-title {
+            animation-delay: 0.8s;
         }
 
         .btn {
