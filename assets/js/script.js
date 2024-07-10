@@ -126,8 +126,8 @@ document.addEventListener('DOMContentLoaded', () => {
 /* Ajustement du base url */
 
 document.addEventListener('DOMContentLoaded', () => {
-    const baseUrl = window.location.origin; // Get the base URL when I am local
-    //const baseUrl = 'https://mareved.github.io/portfolio';
+    //const baseUrl = window.location.origin; // Get the base URL when I am local
+    const baseUrl = 'https://mareved.github.io/portfolio';
     const sections = ['.home-portfolio', '.home-intro', '.cta-contact', '.footer-content'];
     sections.forEach(section => {
         const links = document.querySelectorAll(`${section} a[data-path]`);
