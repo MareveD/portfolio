@@ -11968,6 +11968,7 @@ body {
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-family: "Prata", serif;
   margin-bottom: 0px;
+  text-transform: lowercase;
 }
 
 h1, .h1 {
@@ -12582,22 +12583,6 @@ section {
   z-index: 1;
 }
 
-/* Page A Propos - Section Texte a gauche */
-.section-texte.texte-gauche {
-  flex-direction: row;
-}
-.section-texte.texte-gauche .content {
-  padding-left: 120px;
-}
-
-/* Page A Propos - Section Texte a droite */
-.section-texte.texte-droite {
-  flex-direction: row-reverse;
-}
-.section-texte.texte-droite .content {
-  padding-right: 120px;
-}
-
 .soft-skills {
   position: absolute;
   display: flex;
@@ -12619,6 +12604,22 @@ section {
   padding: 20px;
   font-size: 16px;
   text-transform: uppercase;
+}
+
+/* Page A Propos - Section Texte a gauche */
+.section-texte.texte-gauche {
+  flex-direction: row;
+}
+.section-texte.texte-gauche .content {
+  padding-left: 120px;
+}
+
+/* Page A Propos - Section Texte a droite */
+.section-texte.texte-droite {
+  flex-direction: row-reverse;
+}
+.section-texte.texte-droite .content {
+  padding-right: 120px;
 }
 
 /* ------------------------------------------------------------ */
