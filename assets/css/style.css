@@ -12988,8 +12988,8 @@ section {
   padding: 0px 100px;
 }
 .overlay .overlay-content img {
-  max-width: 60%;
-  max-height: 60%;
+  max-width: 60vw;
+  max-height: 85vh;
 }
 .overlay .caption {
   margin-top: 20px;
@@ -12997,6 +12997,7 @@ section {
   display: flex;
   flex-direction: column;
   row-gap: 10px;
+  min-width: 20vw;
 }
 .overlay .caption .note {
   font-size: 14px;
