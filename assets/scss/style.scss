@@ -31,7 +31,7 @@ $section-padding: 100px 0px;
 
 .animate-fadeIn {
     animation: fadeIn 0.5s forwards;
-    animation-delay: 0.5s;
+    animation-delay: 0.25s;
 }
 
 /* ------------------------------------------------------------ */
@@ -607,6 +607,14 @@ section {
     
         .content {
             width: 50%;
+
+            .arrow {
+                position: absolute;
+                top: -60px;
+                left: -125px;
+                right: 0;
+                margin: auto;
+            }
     
             h1 {
                 opacity: 0;
@@ -621,8 +629,8 @@ section {
 
     .shapes {
         position: absolute;
-        top: -100px;
-        left: -50px;
+        top: -300px;
+        left: -100px;
         z-index: 10;
         width: 800px;
         height: 800px;
@@ -783,21 +791,21 @@ section {
     display: flex;
     flex-direction: row;
     column-gap: 2%;
-    top: -100px;
+    top: -75px;
     width: 100%;
     z-index: 1;
     max-width: 1400px;
 
     .skill {
         flex: 1;
-        aspect-ratio: 1 / 1;
+        aspect-ratio: 1.5 / 1;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         text-align: center;
-        padding: 20px;
-        font-size: 16px;
+        padding: 10px;
+        font-size: 14px;
         text-transform: uppercase;
     }
 }
@@ -937,6 +945,10 @@ section {
                         left: -80px;
                         position: relative;
 
+                        h2 {
+                            opacity: 0;
+                        }
+
                         .section-title {
                             text-align: center;
                             font-weight: 200;
@@ -1003,6 +1015,10 @@ section {
                         right: -185px;
                         position: relative;
 
+                        h2 {
+                            opacity: 0;
+                        }
+
                         .section-title {
                             text-align: center;
                             font-weight: 200;
@@ -1067,6 +1083,10 @@ section {
                         row-gap: 20px;
                         left: -175px;
                         position: relative;
+
+                        h2 {
+                            opacity: 0;
+                        }
 
                         .section-title {
                             text-align: center;
