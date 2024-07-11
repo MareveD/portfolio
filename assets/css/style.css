@@ -12641,7 +12641,7 @@ section {
   background-blend-mode: multiply;
   background-image: url("../img/noise_bg_cropped_50.jpg");
   background-attachment: fixed;
-  padding: 120px 0px;
+  padding: 120px 0px 0px 0px;
   background-color: #0E2B36;
   position: relative;
 }
@@ -12686,6 +12686,7 @@ section {
   display: flex;
   flex-direction: column;
   row-gap: 200px;
+  max-width: 1200px;
 }
 .portfolio-list .portfolio-content .pf-web {
   position: relative;
@@ -12755,6 +12756,7 @@ section {
   position: absolute;
   width: 450px;
   height: auto;
+  left: -60px;
 }
 .portfolio-list .portfolio-content .pf-graphisme .content .shape {
   z-index: 1;
