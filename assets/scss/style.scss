@@ -82,6 +82,11 @@ $section-padding: 100px 0px;
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: $light-color;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-image: url("../img/noise_bg_cropped_50.jpg");
+    background-attachment: fixed;
 }
 
 h1, h2, h3, h4, h5, h6 { font-family: 'Prata', serif; margin-bottom: 0px;}
@@ -568,6 +573,62 @@ section {
                 font-family: 'Montserrat', sans-serif;
                 font-weight: 200;
             }
+        }
+    }
+}
+
+/* ------------------------------------------------------------ */
+
+/* Page A Propos - Header */
+.header-gen {
+    display: flex;
+    flex-direction: row;
+    column-gap: 4%;
+    align-items: center;
+    min-height: auto;
+    
+    .header-content {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 100%, 20% 100%);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-blend-mode: multiply;
+        background-image: url("../img/noise_bg_cropped_50.jpg");
+        background-attachment: fixed;
+        padding: 120px 0px;
+        background-color: $dark-color;
+    
+        .content {
+            width: 50%;
+    
+            h1 {
+                opacity: 0;
+            }
+    
+            .header-title {
+                animation: fadeIn 1s forwards;
+                animation-delay: 0s;
+            }
+        }
+    }
+
+    .shapes {
+        position: absolute;
+        top: -100px;
+        left: -50px;
+        z-index: 10;
+        width: 800px;
+        height: 800px;
+    
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
         }
     }
 }

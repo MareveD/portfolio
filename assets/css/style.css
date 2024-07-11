@@ -11946,6 +11946,11 @@ textarea.form-control-lg {
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #BFCAD3;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  background-image: url("../img/noise_bg_cropped_50.jpg");
+  background-attachment: fixed;
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
@@ -12395,6 +12400,55 @@ section {
   font-size: 100px;
   font-family: "Montserrat", sans-serif;
   font-weight: 200;
+}
+
+/* ------------------------------------------------------------ */
+/* Page A Propos - Header */
+.header-gen {
+  display: flex;
+  flex-direction: row;
+  column-gap: 4%;
+  align-items: center;
+  min-height: auto;
+}
+.header-gen .header-content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 100%, 20% 100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  background-image: url("../img/noise_bg_cropped_50.jpg");
+  background-attachment: fixed;
+  padding: 120px 0px;
+  background-color: #0E2B36;
+}
+.header-gen .header-content .content {
+  width: 50%;
+}
+.header-gen .header-content .content h1, .header-gen .header-content .content .h1 {
+  opacity: 0;
+}
+.header-gen .header-content .content .header-title {
+  animation: fadeIn 1s forwards;
+  animation-delay: 0s;
+}
+.header-gen .shapes {
+  position: absolute;
+  top: -100px;
+  left: -50px;
+  z-index: 10;
+  width: 800px;
+  height: 800px;
+}
+.header-gen .shapes img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* ------------------------------------------------------------ */
