@@ -2,11 +2,16 @@
 @import '../../node_modules/bootstrap/scss/bootstrap';
 // @import '../../node_modules/@fortawesome/fontawesome-free/css/all.css';
 
+/* ------------------------------------------------------------ */
+
+/* variables */
 $accent-color: #ED7745;
 $dark-color: #0E2B36;
 $light-color: #BFCAD3;
 $white-color: #DCE6EE;
 $section-padding: 100px 0px;
+
+/* ------------------------------------------------------------ */
 
 /* animations */
 @keyframes fadeIn {
@@ -28,6 +33,8 @@ $section-padding: 100px 0px;
     animation-delay: 0.5s;
 }
 
+/* ------------------------------------------------------------ */
+
 /* custom colors */
 .coul-accent {color: $accent-color !important;}
 .coul-dark {color: $dark-color !important;}
@@ -43,6 +50,8 @@ $section-padding: 100px 0px;
 .bg-dark {background-color: $dark-color !important;}
 .bg-light {background-color: $light-color !important;}
 .bg-white {background-color: $white-color !important;}
+
+/* ------------------------------------------------------------ */
 
 /* Transitions */
 .border-right, .border-left {
@@ -67,8 +76,9 @@ $section-padding: 100px 0px;
     transition: transform 0.1s linear;
 }
 
-/* Styles generaux */
+/* ------------------------------------------------------------ */
 
+/* Styles generaux */
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: $light-color;
@@ -195,6 +205,125 @@ section {
     row-gap: 40px;
     align-items: flex-start;
 }
+
+/* ------------------------------------------------------------ */
+
+/* Navigations */
+.menu-open, 
+.menu-close {
+    top: 25px;
+    position: fixed;
+    z-index: 100;
+    color: $accent-color;
+    cursor: pointer;
+    border: none;
+    right: 25px;
+    width: 60px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(
+        25% 0%, 
+        75% 0%, 
+        100% 50%, 
+        75% 100%, 
+        25% 100%, 
+        0% 50%
+    );
+    background: $dark-color;
+    transition: all 0.3s;
+    font-size: 25px;
+}
+
+.menu-open:hover,
+.menu-close:hover {
+    color: $light-color;
+}
+
+.main-navigation {
+    display: none;
+    position: fixed;
+    z-index: 101;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: $dark-color;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+
+    .nav-logo {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        .logo {
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            top: 30%;
+            z-index: 102;
+        }
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        height: 90vh;
+        row-gap: 60px;
+        justify-content: space-between;
+        padding: 100px 25px 100px 0px;
+
+        .header-menu {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: space-between;
+            height: 100%;
+            padding-right: 100px;
+
+            a {
+                font-size: 75px;
+                color: $light-color;
+                font-family: 'Prata', serif; 
+            }
+
+            a:hover {
+                color: $white-color;
+            }
+        }
+    }
+
+    .social-media {
+        display: flex;
+        flex-direction: row;
+        column-gap: 20px;
+        padding-right: 100px;
+
+        a {
+            width: fit-content;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: $accent-color;
+
+            i {
+                font-size: 24px;
+            }
+        }
+
+        a:hover {
+            color: $white-color;
+        }
+    }
+}
+
+/* ------------------------------------------------------------ */
 
 /* Accueil - Header */
 .header-home {

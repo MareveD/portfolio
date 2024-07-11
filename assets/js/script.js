@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
 /* Animations en general */
 
 document.addEventListener('DOMContentLoaded', () => {
-    const elements = document.querySelectorAll('.shape, .caption, .btn-arrow, .section-title, .cta-arrow');
+    const elements = document.querySelectorAll('.shape, .caption, .btn-arrow, .section-title, .cta-arrow, .nav-logo');
     const options = {
         threshold: 0.5
     };
@@ -128,7 +128,7 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', () => {
     //const baseUrl = window.location.origin; // Get the base URL when I am local
     const baseUrl = 'https://mareved.github.io/portfolio';
-    const sections = ['.home-portfolio', '.home-intro', '.cta-contact', '.footer-content'];
+    const sections = ['.home-portfolio', '.home-intro', '.cta-contact', '.footer-content', '.header-menu'];
     sections.forEach(section => {
         const links = document.querySelectorAll(`${section} a[data-path]`);
         links.forEach(link => {
@@ -137,3 +137,26 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+/* ------------------------------------------------------------------------------ */
+
+/* Menu burger */
+document.addEventListener('DOMContentLoaded', function () {
+    const btnOpen = document.querySelector('.menu-open');
+    const btnClose = document.querySelector('.menu-close');
+    const nav = document.querySelector('.main-navigation');
+
+    btnOpen.addEventListener('click', function (e) {
+        e.preventDefault();
+        btnOpen.style.display = 'none';
+        nav.style.display = 'flex';
+    });
+
+    btnClose.addEventListener('click', function (e) {
+        e.preventDefault();
+        nav.style.display = 'none';
+        btnOpen.style.display = 'flex';
+    });
+});
+
+/* ------------------------------------------------------------------------------ */
