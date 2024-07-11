@@ -12623,6 +12623,31 @@ section {
 }
 
 /* ------------------------------------------------------------ */
+/* Page Expertise - Logiciel */
+.stacks {
+  display: flex;
+  flex-direction: row;
+  column-gap: 8%;
+  width: 100%;
+}
+.stacks .stack {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+}
+.stacks .stack p {
+  text-transform: uppercase;
+  flex: 1;
+}
+.stacks .stack span {
+  display: flex;
+  flex-direction: row;
+  column-gap: 5px;
+  align-items: center;
+  flex: 1;
+}
+
+/* ------------------------------------------------------------ */
 /* Page Contact */
 .section-contact {
   position: relative;
@@ -12758,6 +12783,12 @@ section {
 }
 .cta-follow .content .social-media a:hover {
   color: #DCE6EE;
+}
+
+/* ------------------------------------------------------------ */
+/* CTA CV */
+.cta-cv .content {
+  align-items: center;
 }
 
 /* ------------------------------------------------------------ */
