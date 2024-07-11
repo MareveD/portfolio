@@ -11877,6 +11877,10 @@ textarea.form-control-lg {
   color: #0E2B36 !important;
 }
 
+.coul-mid {
+  color: #769DAF !important;
+}
+
 .coul-light {
   color: #BFCAD3 !important;
 }
@@ -11893,6 +11897,10 @@ textarea.form-control-lg {
   color: #0E2B36 !important;
 }
 
+.hover-mid:hover {
+  color: #769DAF !important;
+}
+
 .hover-light:hover {
   color: #BFCAD3 !important;
 }
@@ -11907,6 +11915,10 @@ textarea.form-control-lg {
 
 .bg-dark {
   background-color: #0E2B36 !important;
+}
+
+.bg-mid {
+  background-color: #769DAF !important;
 }
 
 .bg-light {
@@ -12564,6 +12576,11 @@ section {
   column-gap: 4%;
   align-items: center;
 }
+.section-texte .arrow {
+  position: absolute;
+  bottom: -125px;
+  z-index: 1;
+}
 
 /* Page A Propos - Section Texte a gauche */
 .section-texte.texte-gauche {
@@ -12579,6 +12596,29 @@ section {
 }
 .section-texte.texte-droite .content {
   padding-right: 120px;
+}
+
+.soft-skills {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  column-gap: 2%;
+  top: -100px;
+  width: 100%;
+  z-index: 1;
+  max-width: 1400px;
+}
+.soft-skills .skill {
+  flex: 1;
+  aspect-ratio: 1/1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  font-size: 16px;
+  text-transform: uppercase;
 }
 
 /* ------------------------------------------------------------ */

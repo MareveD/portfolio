@@ -7,6 +7,7 @@
 /* variables */
 $accent-color: #ED7745;
 $dark-color: #0E2B36;
+$mid-color: #769DAF;
 $light-color: #BFCAD3;
 $white-color: #DCE6EE;
 $section-padding: 100px 0px;
@@ -38,16 +39,19 @@ $section-padding: 100px 0px;
 /* custom colors */
 .coul-accent {color: $accent-color !important;}
 .coul-dark {color: $dark-color !important;}
+.coul-mid {color: $mid-color !important;}
 .coul-light {color: $light-color !important;}
 .coul-white {color: $white-color !important;}
 
 .hover-accent:hover {color: $accent-color !important;}
 .hover-dark:hover {color: $dark-color !important;}
+.hover-mid:hover {color: $mid-color !important;}
 .hover-light:hover {color: $light-color !important;}
 .hover-white:hover {color: $white-color !important;}
 
 .bg-accent {background-color: $accent-color !important;}
 .bg-dark {background-color: $dark-color !important;}
+.bg-mid {background-color: $mid-color !important;}
 .bg-light {background-color: $light-color !important;}
 .bg-white {background-color: $white-color !important;}
 
@@ -766,6 +770,12 @@ section {
     display: flex;
     column-gap: 4%;
     align-items: center;
+
+    .arrow {
+        position: absolute;
+        bottom: -125px;
+        z-index: 1;
+    }
 }
 
 /* Page A Propos - Section Texte a gauche */
@@ -783,6 +793,30 @@ section {
 
     .content {
         padding-right: 120px;
+    }
+}
+
+.soft-skills {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    column-gap: 2%;
+    top: -100px;
+    width: 100%;
+    z-index: 1;
+    max-width: 1400px;
+
+    .skill {
+        flex: 1;
+        aspect-ratio: 1 / 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+        font-size: 16px;
+        text-transform: uppercase;
     }
 }
 
