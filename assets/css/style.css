@@ -12558,6 +12558,29 @@ section {
   height: 100%;
 }
 
+/* Page A Propos - Section Texte */
+.section-texte {
+  display: flex;
+  column-gap: 4%;
+  align-items: center;
+}
+
+/* Page A Propos - Section Texte a gauche */
+.section-texte.texte-gauche {
+  flex-direction: row;
+}
+.section-texte.texte-gauche .content {
+  padding-left: 120px;
+}
+
+/* Page A Propos - Section Texte a droite */
+.section-texte.texte-droite {
+  flex-direction: row-reverse;
+}
+.section-texte.texte-droite .content {
+  padding-right: 120px;
+}
+
 /* ------------------------------------------------------------ */
 /* Page Contact */
 .section-contact {
