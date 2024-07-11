@@ -164,3 +164,33 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 /* ------------------------------------------------------------------------------ */
+
+/* Galerie d'images */
+
+document.addEventListener("DOMContentLoaded", function() {
+    const voirPlusBtns = document.querySelectorAll(".single-projet");
+    const closeBtns = document.querySelectorAll(".close-btn");
+    
+    voirPlusBtns.forEach(btn => {
+        btn.addEventListener("click", function() {
+            const overlayId = btn.closest(".single-projet").getAttribute("data-overlay");
+            const overlay = document.getElementById(overlayId);
+            overlay.style.display = "flex";
+        });
+    });
+
+    closeBtns.forEach(btn => {
+        btn.addEventListener("click", function() {
+            btn.closest(".overlay").style.display = "none";
+        });
+    });
+
+    // Close overlay when clicking outside of content
+    document.querySelectorAll(".overlay").forEach(overlay => {
+        overlay.addEventListener("click", function(event) {
+            if (event.target === overlay) {
+                overlay.style.display = "none";
+            }
+        });
+    });
+});
