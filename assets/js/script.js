@@ -1,12 +1,13 @@
 /* ------------------------------------------------------------------------------ */
 
 /* Accueil : Rotation des shapes au scroll */
-
 document.addEventListener('DOMContentLoaded', () => {
     const shape1 = document.getElementById('shape1');
     const shape2 = document.getElementById('shape2');
+
     const shape5 = document.getElementById('shape5');
     const shape6 = document.getElementById('shape6');
+
     let lastScrollTop = 0;
 
     window.addEventListener('scroll', () => {
@@ -16,16 +17,19 @@ document.addEventListener('DOMContentLoaded', () => {
         if (calculScroll !== 0) {
             let rotation1 = parseFloat(getComputedStyle(shape1).getPropertyValue('--rotation') || 0);
             let rotation2 = parseFloat(getComputedStyle(shape2).getPropertyValue('--rotation') || 0);
+
             let rotation5 = parseFloat(getComputedStyle(shape5).getPropertyValue('--rotation') || 0);
             let rotation6 = parseFloat(getComputedStyle(shape6).getPropertyValue('--rotation') || 0);
 
             shape1.style.setProperty('--rotation', rotation1 + calculScroll * 0.1);
             shape2.style.setProperty('--rotation', rotation2 - calculScroll * 0.1);
+
             shape5.style.setProperty('--rotation', rotation5 + calculScroll * 0.1);
             shape6.style.setProperty('--rotation', rotation6 - calculScroll * 0.1);
 
             shape1.style.transform = `rotate(${rotation1 + calculScroll * 0.1}deg)`;
             shape2.style.transform = `rotate(${rotation2 - calculScroll * 0.1}deg)`;
+
             shape5.style.transform = `rotate(${rotation5 + calculScroll * 0.1}deg)`;
             shape6.style.transform = `rotate(${rotation6 - calculScroll * 0.1}deg)`;
 

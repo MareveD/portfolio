@@ -12451,6 +12451,113 @@ section {
   height: 100%;
 }
 
+/* Page A Propos - Introduction */
+.apropos-intro {
+  position: relative;
+  z-index: 1;
+}
+.apropos-intro .portrait {
+  position: absolute;
+  z-index: 20;
+}
+.apropos-intro .portrait .portrait-me {
+  position: absolute;
+}
+.apropos-intro .portrait .portrait-salem {
+  position: absolute;
+}
+.apropos-intro .portrait .shape {
+  z-index: 1;
+  position: relative;
+}
+.apropos-intro .portrait .arrow {
+  z-index: 1;
+  position: absolute;
+  width: 125px;
+  height: auto;
+}
+.apropos-intro .portrait .arrow .arrow-shape {
+  position: absolute;
+  width: 125px;
+  height: auto;
+}
+.apropos-intro .portrait p {
+  z-index: 1;
+  position: absolute;
+  font-size: 12px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  text-align: center;
+}
+.apropos-intro .portrait:has(.portrait-me) {
+  right: 300px;
+  top: 100px;
+}
+.apropos-intro .portrait:has(.portrait-me) .arrow {
+  bottom: -40px;
+  right: 180px;
+}
+.apropos-intro .portrait:has(.portrait-me) .arrow p {
+  bottom: 0;
+}
+.apropos-intro .portrait:has(.portrait-salem) {
+  right: 150px;
+  bottom: 200px;
+}
+.apropos-intro .portrait:has(.portrait-salem) .portrait-salem {
+  top: -20px;
+  left: -10px;
+}
+.apropos-intro .portrait:has(.portrait-salem) .arrow {
+  left: -120px;
+  bottom: 0px;
+}
+.apropos-intro .portrait:has(.portrait-salem) .arrow p {
+  bottom: -15px;
+}
+.apropos-intro .container {
+  display: flex;
+  flex-direction: row;
+}
+.apropos-intro .intro-content {
+  padding-top: 100px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  position: relative;
+}
+.apropos-intro .intro-content .btn {
+  width: fit-content;
+}
+.apropos-intro .intro-content .je-suis {
+  display: flex;
+  flex-direction: row;
+  column-gap: 4%;
+  align-items: center;
+}
+.apropos-intro .intro-content .arrow {
+  top: -20px;
+  position: absolute;
+  right: -250px;
+}
+.apropos-intro .shapes {
+  position: absolute;
+  top: 100px;
+  right: 0px;
+  z-index: 10;
+  width: 1200px;
+  height: 1200px;
+}
+.apropos-intro .shapes img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 /* ------------------------------------------------------------ */
 /* Page Contact */
 .section-contact {

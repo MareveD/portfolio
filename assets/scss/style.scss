@@ -633,6 +633,134 @@ section {
     }
 }
 
+/* Page A Propos - Introduction */
+.apropos-intro {
+    position: relative;
+    z-index: 1;
+
+    .portrait {
+        position: absolute;
+        z-index: 20;
+
+        .portrait-me {
+            position: absolute;
+        }
+
+        .portrait-salem {
+            position: absolute;
+        }
+
+        .shape {
+            z-index: 1;
+            position: relative;
+        }
+
+        .arrow {
+            z-index: 1;
+            position: absolute;
+            width: 125px;
+            height: auto;
+
+            .arrow-shape {
+                position: absolute;
+                width: 125px;
+                height: auto;
+            }
+        }
+
+        p {
+            z-index: 1;
+            position: absolute;
+            font-size: 12px;
+            left: 0px;
+            right: 0px;
+            margin: auto;
+            text-align: center;
+        }
+    }
+
+    .portrait:has(.portrait-me) {
+        right: 300px;
+        top: 100px;
+
+        .arrow {
+            bottom: -40px;
+            right: 180px;
+
+            p {
+                bottom: 0;
+            }
+        }
+    }
+
+    .portrait:has(.portrait-salem) {
+        right: 150px;
+        bottom: 200px;
+
+        .portrait-salem {
+            top: -20px;
+            left: -10px;
+        }
+
+        .arrow {
+            left: -120px;
+            bottom: 0px;
+
+            p {
+                bottom: -15px;
+            }
+        }
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .intro-content {
+        padding-top: 100px;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        position: relative;
+
+        .btn {
+            width: fit-content;
+        }
+
+        .je-suis {
+            display: flex;
+            flex-direction: row;
+            column-gap: 4%;
+            align-items: center;
+        }
+
+        .arrow {
+            top: -20px;
+            position: absolute;
+            right: -250px;
+        }
+    }
+
+    .shapes {
+        position: absolute;
+        top: 100px;
+        right: 0px;
+        z-index: 10;
+        width: 1200px;
+        height: 1200px;
+    
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
 /* ------------------------------------------------------------ */
 
 /* Page Contact */
