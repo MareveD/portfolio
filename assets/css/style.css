@@ -12623,6 +12623,234 @@ section {
 }
 
 /* ------------------------------------------------------------ */
+/* Page Portfolio - Header */
+.header-portfolio {
+  display: flex;
+  flex-direction: row;
+  column-gap: 4%;
+  align-items: center;
+  min-height: auto;
+}
+.header-portfolio .header-content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  background-image: url("../img/noise_bg_cropped_50.jpg");
+  background-attachment: fixed;
+  padding: 120px 0px;
+  background-color: #0E2B36;
+  position: relative;
+}
+.header-portfolio .header-content .content {
+  width: 50%;
+}
+.header-portfolio .header-content .content h1, .header-portfolio .header-content .content .h1 {
+  opacity: 0;
+}
+.header-portfolio .header-content .content .header-title {
+  animation: fadeIn 1s forwards;
+  animation-delay: 0s;
+}
+.header-portfolio .header-content .content .arrow {
+  position: absolute;
+  top: -60px;
+  left: -125px;
+  right: 0;
+  margin: auto;
+}
+.header-portfolio .shapes {
+  position: absolute;
+  top: -450px;
+  left: 10px;
+  z-index: 10;
+  width: 800px;
+  height: 800px;
+}
+.header-portfolio .shapes img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.portfolio-list {
+  position: relative;
+  z-index: 1;
+}
+.portfolio-list .portfolio-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 200px;
+}
+.portfolio-list .portfolio-content .pf-web {
+  position: relative;
+  z-index: 20;
+  top: 100px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.portfolio-list .portfolio-content .pf-web .content {
+  align-items: flex-end;
+}
+.portfolio-list .portfolio-content .pf-web .content .btn-pf-web {
+  position: absolute;
+  width: 450px;
+  height: auto;
+}
+.portfolio-list .portfolio-content .pf-web .content .shape {
+  z-index: 1;
+  position: relative;
+  right: 30px;
+  top: 40px;
+}
+.portfolio-list .portfolio-content .pf-web .content .arrow {
+  z-index: 1;
+  position: absolute;
+  width: 460px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.portfolio-list .portfolio-content .pf-web .content .arrow .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+  left: -80px;
+  position: relative;
+}
+.portfolio-list .portfolio-content .pf-web .content .arrow .title .section-title {
+  text-align: center;
+  font-weight: 200;
+  transition: all 0.5s ease-in-out;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+}
+.portfolio-list .portfolio-content .pf-web:hover .section-title {
+  color: #ED7745 !important;
+}
+.portfolio-list .portfolio-content .pf-web:hover .bouton {
+  color: #ED7745;
+}
+.portfolio-list .portfolio-content .pf-graphisme {
+  position: relative;
+  z-index: 20;
+  top: 100px;
+  display: flex;
+  flex-direction: row;
+}
+.portfolio-list .portfolio-content .pf-graphisme .content {
+  align-items: flex-end;
+}
+.portfolio-list .portfolio-content .pf-graphisme .content .btn-pf-graphisme {
+  position: absolute;
+  width: 450px;
+  height: auto;
+}
+.portfolio-list .portfolio-content .pf-graphisme .content .shape {
+  z-index: 1;
+  position: relative;
+  right: 30px;
+  top: 40px;
+}
+.portfolio-list .portfolio-content .pf-graphisme .content .arrow {
+  z-index: 1;
+  position: absolute;
+  width: 460px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.portfolio-list .portfolio-content .pf-graphisme .content .arrow .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+  right: -185px;
+  position: relative;
+}
+.portfolio-list .portfolio-content .pf-graphisme .content .arrow .title .section-title {
+  text-align: center;
+  font-weight: 200;
+  transition: all 0.5s ease-in-out;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+}
+.portfolio-list .portfolio-content .pf-graphisme:hover .section-title {
+  color: #ED7745 !important;
+}
+.portfolio-list .portfolio-content .pf-graphisme:hover .bouton {
+  color: #ED7745;
+}
+.portfolio-list .portfolio-content .pf-illustration {
+  position: relative;
+  z-index: 20;
+  top: 100px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.portfolio-list .portfolio-content .pf-illustration .content {
+  align-items: flex-end;
+}
+.portfolio-list .portfolio-content .pf-illustration .content .btn-pf-illustration {
+  position: absolute;
+  width: 450px;
+  height: auto;
+}
+.portfolio-list .portfolio-content .pf-illustration .content .shape {
+  z-index: 1;
+  position: relative;
+  right: 30px;
+  top: 40px;
+}
+.portfolio-list .portfolio-content .pf-illustration .content .arrow {
+  z-index: 1;
+  position: absolute;
+  width: 460px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.portfolio-list .portfolio-content .pf-illustration .content .arrow .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+  left: -175px;
+  position: relative;
+}
+.portfolio-list .portfolio-content .pf-illustration .content .arrow .title .section-title {
+  text-align: center;
+  font-weight: 200;
+  transition: all 0.5s ease-in-out;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+}
+.portfolio-list .portfolio-content .pf-illustration:hover .section-title {
+  color: #ED7745 !important;
+}
+.portfolio-list .portfolio-content .pf-illustration:hover .bouton {
+  color: #ED7745;
+}
+
+/* ------------------------------------------------------------ */
 /* Page Expertise - Logiciel */
 .stacks {
   display: flex;
@@ -12721,7 +12949,7 @@ section {
   row-gap: 20px;
 }
 .cta-contact .content .section-title {
-  animation-delay: 1s;
+  animation-delay: 0.5s;
 }
 .cta-contact .content .btn {
   width: fit-content;
@@ -12760,7 +12988,7 @@ section {
   row-gap: 20px;
 }
 .cta-follow .content .section-title {
-  animation-delay: 1s;
+  animation-delay: 0.5s;
 }
 .cta-follow .content .btn {
   width: fit-content;
