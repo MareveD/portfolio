@@ -13530,7 +13530,7 @@ footer .footer-content .footer-copyright {
   .home-portfolio .content {
     align-items: center;
   }
-  /* entete generale */
+  /* entete generale*/
   .header-gen .shapes {
     display: none;
   }
@@ -13556,13 +13556,13 @@ footer .footer-content .footer-copyright {
     display: none;
   }
   .section-texte.texte-droite .content {
-    padding-right: 0;
+    padding-right: 0px;
   }
   .section-texte.texte-gauche .content {
-    padding-left: 0;
+    padding-left: 0px;
   }
   .soft-skills {
-    padding: 0 40px;
+    padding: 0px 40px;
     flex-wrap: wrap;
     row-gap: 20px;
     position: relative;
@@ -13576,7 +13576,7 @@ footer .footer-content .footer-copyright {
   }
   .apropos-intro .intro-content {
     width: 100%;
-    padding-top: 0;
+    padding-top: 0px;
   }
   .apropos-intro .intro-content .je-suis {
     flex-direction: column;
@@ -13590,7 +13590,7 @@ footer .footer-content .footer-copyright {
   }
   /* Page Contact */
   .section-contact .contact-content {
-    padding-top: 0;
+    padding-top: 0px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -13606,16 +13606,13 @@ footer .footer-content .footer-copyright {
   .header-portfolio .header-content {
     justify-content: flex-start;
     background-attachment: scroll;
-    padding: 100px 40px 0;
+    padding: 100px 40px 0px 40px;
   }
   .header-portfolio .header-content .content .arrow {
     display: none;
   }
   .header-portfolio .shapes {
     display: none;
-  }
-  .portfolio-list {
-    padding-bottom: 0;
   }
   .portfolio-list .portfolio-content {
     row-gap: 100px;
@@ -13630,34 +13627,47 @@ footer .footer-content .footer-copyright {
   .portfolio-list .portfolio-content .content {
     flex-direction: row;
   }
-  .portfolio-list .portfolio-content .content .btn-pf-web,
-  .portfolio-list .portfolio-content .content .btn-pf-graphisme,
-  .portfolio-list .portfolio-content .content .btn-pf-illustration {
+  .portfolio-list .portfolio-content .pf-web .content .btn-pf-web,
+  .portfolio-list .portfolio-content .pf-graphisme .content .btn-pf-graphisme,
+  .portfolio-list .portfolio-content .pf-illustration .content .btn-pf-illustration {
     position: relative;
     width: 400px;
   }
-  .portfolio-list .portfolio-content .content .shape {
+  .portfolio-list .portfolio-content .pf-web .content .shape,
+  .portfolio-list .portfolio-content .pf-graphisme .content .shape,
+  .portfolio-list .portfolio-content .pf-illustration .content .shape {
     display: none;
   }
-  .portfolio-list .portfolio-content .content .arrow {
+  .portfolio-list {
+    padding-bottom: 0px;
+  }
+  .portfolio-list .portfolio-content .pf-web .content .arrow,
+  .portfolio-list .portfolio-content .pf-graphisme .content .arrow,
+  .portfolio-list .portfolio-content .pf-illustration .content .arrow {
     width: 100%;
   }
-  .portfolio-list .portfolio-content .content .arrow .arrow-shape {
+  .portfolio-list .portfolio-content .pf-web .content .arrow .arrow-shape,
+  .portfolio-list .portfolio-content .pf-graphisme .content .arrow .arrow-shape,
+  .portfolio-list .portfolio-content .pf-illustration .content .arrow .arrow-shape {
     width: 300px;
   }
-  .portfolio-list .portfolio-content .content .arrow .title.pf-web, .portfolio-list .portfolio-content .content .arrow .title.pf-illustration {
+  .portfolio-list .portfolio-content .pf-web .content .arrow .title,
+  .portfolio-list .portfolio-content .pf-illustration .content .arrow .title {
     align-items: flex-start;
     left: 0;
   }
-  .portfolio-list .portfolio-content .content .arrow .title.pf-graphisme {
+  .portfolio-list .portfolio-content .pf-graphisme .content .arrow .title {
     align-items: flex-end;
     right: 0;
   }
-  .portfolio-list .portfolio-content .content .arrow.pf-graphisme {
+  .portfolio-list .portfolio-content .pf-graphisme .content .arrow {
     left: 0;
     right: 0;
     justify-content: flex-end;
     align-items: flex-end;
+  }
+  .portfolio-list .portfolio-content .pf-graphisme .content .btn-pf-graphisme {
+    left: 0px;
   }
   .overlay .overlay-content img {
     max-width: 90vw;
@@ -13861,45 +13871,13 @@ footer .footer-content .footer-copyright {
     font-size: 10px;
   }
 }
-@media screen and (max-width: 960px) and (orientation: landscape) {
-  .main-navigation {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-  }
-  .main-navigation .navigation {
-    row-gap: 20px;
-    padding: 20px 25px 20px 0px;
-    justify-content: flex-end;
-  }
-  .main-navigation .shape {
-    display: none;
-  }
-  .main-navigation .nav-logo {
-    position: relative;
-    top: 0px;
-    left: 0px;
-    width: 100vw;
-  }
-  .main-navigation .nav-logo .logo {
-    position: relative;
-    left: 50px;
-    top: 240px;
-  }
-  .main-navigation .navigation .header-menu {
-    flex-direction: row;
-    height: fit-content;
-    column-gap: 20px;
-  }
-  .main-navigation .navigation .header-menu a {
-    font-size: 35px;
-  }
+@media screen and (max-width: 1024px) and (orientation: landscape) {
   .header-home .shapes {
     display: none;
   }
   .header-home .header-content {
     justify-content: flex-start;
-    padding: 60px 40px;
+    padding: 100px 40px;
   }
   .header-home .header-content .content {
     width: 100%;
@@ -13920,7 +13898,7 @@ footer .footer-content .footer-copyright {
   .home-portfolio .content {
     align-items: center;
   }
-  /* entete generale */
+  /* entete generale*/
   .header-gen .shapes {
     display: none;
   }
@@ -13946,13 +13924,13 @@ footer .footer-content .footer-copyright {
     display: none;
   }
   .section-texte.texte-droite .content {
-    padding-right: 0;
+    padding-right: 0px;
   }
   .section-texte.texte-gauche .content {
-    padding-left: 0;
+    padding-left: 0px;
   }
   .soft-skills {
-    padding: 0 40px;
+    padding: 0px 40px;
     flex-wrap: wrap;
     row-gap: 20px;
     position: relative;
@@ -13966,7 +13944,7 @@ footer .footer-content .footer-copyright {
   }
   .apropos-intro .intro-content {
     width: 100%;
-    padding-top: 0;
+    padding-top: 0px;
   }
   .apropos-intro .intro-content .je-suis {
     flex-direction: column;
@@ -13980,7 +13958,7 @@ footer .footer-content .footer-copyright {
   }
   /* Page Contact */
   .section-contact .contact-content {
-    padding-top: 0;
+    padding-top: 0px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -13996,16 +13974,13 @@ footer .footer-content .footer-copyright {
   .header-portfolio .header-content {
     justify-content: flex-start;
     background-attachment: scroll;
-    padding: 100px 40px 0;
+    padding: 100px 40px 0px 40px;
   }
   .header-portfolio .header-content .content .arrow {
     display: none;
   }
   .header-portfolio .shapes {
     display: none;
-  }
-  .portfolio-list {
-    padding-bottom: 0;
   }
   .portfolio-list .portfolio-content {
     row-gap: 100px;
@@ -14020,61 +13995,61 @@ footer .footer-content .footer-copyright {
   .portfolio-list .portfolio-content .content {
     flex-direction: row;
   }
-  .portfolio-list .portfolio-content .content .btn-pf-web,
-  .portfolio-list .portfolio-content .content .btn-pf-graphisme,
-  .portfolio-list .portfolio-content .content .btn-pf-illustration {
+  .portfolio-list .portfolio-content .pf-web .content .btn-pf-web,
+  .portfolio-list .portfolio-content .pf-graphisme .content .btn-pf-graphisme,
+  .portfolio-list .portfolio-content .pf-illustration .content .btn-pf-illustration {
     position: relative;
     width: 400px;
   }
-  .portfolio-list .portfolio-content .content .shape {
+  .portfolio-list .portfolio-content .pf-web .content .shape,
+  .portfolio-list .portfolio-content .pf-graphisme .content .shape,
+  .portfolio-list .portfolio-content .pf-illustration .content .shape {
     display: none;
   }
-  .portfolio-list .portfolio-content .content .arrow {
+  .portfolio-list {
+    padding-bottom: 0px;
+  }
+  .portfolio-list .portfolio-content .pf-web .content .arrow,
+  .portfolio-list .portfolio-content .pf-graphisme .content .arrow,
+  .portfolio-list .portfolio-content .pf-illustration .content .arrow {
     width: 100%;
   }
-  .portfolio-list .portfolio-content .content .arrow .arrow-shape {
+  .portfolio-list .portfolio-content .pf-web .content .arrow .arrow-shape,
+  .portfolio-list .portfolio-content .pf-graphisme .content .arrow .arrow-shape,
+  .portfolio-list .portfolio-content .pf-illustration .content .arrow .arrow-shape {
     width: 300px;
   }
-  .portfolio-list .portfolio-content .content .arrow .title.pf-web, .portfolio-list .portfolio-content .content .arrow .title.pf-illustration {
+  .portfolio-list .portfolio-content .pf-web .content .arrow .title,
+  .portfolio-list .portfolio-content .pf-illustration .content .arrow .title {
     align-items: flex-start;
     left: 0;
   }
-  .portfolio-list .portfolio-content .content .arrow .title.pf-graphisme {
+  .portfolio-list .portfolio-content .pf-graphisme .content .arrow .title {
     align-items: flex-end;
     right: 0;
   }
-  .portfolio-list .portfolio-content .content .arrow.pf-graphisme {
+  .portfolio-list .portfolio-content .pf-graphisme .content .arrow {
     left: 0;
     right: 0;
     justify-content: flex-end;
     align-items: flex-end;
   }
-  .overlay .overlay-content {
-    flex-direction: row;
+  .portfolio-list .portfolio-content .pf-graphisme .content .btn-pf-graphisme {
+    left: 0px;
   }
   .overlay .overlay-content img {
-    flex: 1;
-    padding-left: 20px;
+    max-width: 90vw;
   }
   .overlay .caption {
-    flex: 1;
-    padding-right: 20px;
+    min-width: 90vw;
+    max-width: 80vw;
     row-gap: 5px;
   }
   .overlay .caption p {
-    font-size: 12px;
+    font-size: 14px;
   }
   .overlay .caption .note {
-    font-size: 10px;
-  }
-  .overlay .caption br {
-    display: none;
-  }
-  .overlay .caption h3, .overlay .caption .h3 {
-    font-size: 30px;
-  }
-  .overlay .caption h5, .overlay .caption .h5 {
-    font-size: 20px;
+    font-size: 13px;
   }
 }
 
