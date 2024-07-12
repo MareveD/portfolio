@@ -13613,6 +13613,9 @@ footer .footer-content .footer-copyright {
   .cta-contact .content {
     padding: 0;
   }
+  .cta-follow .content {
+    padding: 0;
+  }
   footer {
     padding-top: 60px;
   }
@@ -13677,6 +13680,9 @@ footer .footer-content .footer-copyright {
     line-height: 40px;
   }
   .cta-contact .cta-arrow {
+    display: none;
+  }
+  .cta-follow .cta-arrow {
     display: none;
   }
   footer {

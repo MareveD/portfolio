@@ -2050,6 +2050,12 @@ footer {
         }
     }
 
+    .cta-follow {
+        .content {
+            padding: 0;
+        }
+    }
+
     footer {
         padding-top: 60px;
 
@@ -2151,6 +2157,12 @@ footer {
     }
 
     .cta-contact {
+        .cta-arrow {
+            display: none;
+        }
+    }
+
+    .cta-follow {
         .cta-arrow {
             display: none;
         }
