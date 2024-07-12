@@ -13563,6 +13563,9 @@ footer .footer-content .footer-copyright {
   footer .footer-logo .shapes {
     top: 0px;
   }
+  footer .footer-content .footer-copyright {
+    padding: 0px 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
