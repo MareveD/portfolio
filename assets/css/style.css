@@ -13322,6 +13322,10 @@ footer .footer-content .footer-copyright {
   section {
     padding: 60px 40px;
     min-height: auto;
+    background-attachment: revert;
+  }
+  .header-home {
+    background-attachment: revert;
   }
   .border-right {
     display: none;
