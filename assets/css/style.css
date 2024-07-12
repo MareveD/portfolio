@@ -12218,6 +12218,7 @@ section {
   background-blend-mode: multiply;
   background-image: url("../img/imageHeader.jpg");
   background-attachment: fixed;
+  background-size: cover;
 }
 .header-home .header-content {
   width: 100%;
