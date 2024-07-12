@@ -13623,6 +13623,7 @@ footer .footer-content .footer-copyright {
   .portfolio-list .portfolio-content .pf-graphisme .content .btn-pf-graphisme,
   .portfolio-list .portfolio-content .pf-illustration .content .btn-pf-illustration {
     position: relative;
+    width: 375px;
   }
   .portfolio-list .portfolio-content .pf-web .content .shape,
   .portfolio-list .portfolio-content .pf-graphisme .content .shape,
@@ -13636,6 +13637,11 @@ footer .footer-content .footer-copyright {
   .portfolio-list .portfolio-content .pf-graphisme .content .arrow,
   .portfolio-list .portfolio-content .pf-illustration .content .arrow {
     width: 100%;
+  }
+  .portfolio-list .portfolio-content .pf-web .content .arrow .arrow-shape,
+  .portfolio-list .portfolio-content .pf-graphisme .content .arrow .arrow-shape,
+  .portfolio-list .portfolio-content .pf-illustration .content .arrow .arrow-shape {
+    width: 300px;
   }
   .portfolio-list .portfolio-content .pf-web .content .arrow .title,
   .portfolio-list .portfolio-content .pf-illustration .content .arrow .title {
@@ -13705,10 +13711,15 @@ footer .footer-content .footer-copyright {
   .portfolio-list .portfolio-content .pf-web .content .btn-pf-web,
   .portfolio-list .portfolio-content .pf-graphisme .content .btn-pf-graphisme,
   .portfolio-list .portfolio-content .pf-illustration .content .btn-pf-illustration {
-    width: 300px;
+    width: 200px;
   }
   .header-portfolio .header-content {
     padding: 100px 40px 0px 40px;
+  }
+  .portfolio-list .portfolio-content .pf-web,
+  .portfolio-list .portfolio-content .pf-graphisme,
+  .portfolio-list .portfolio-content .pf-illustration {
+    top: 0px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -13788,6 +13799,11 @@ footer .footer-content .footer-copyright {
     max-width: 350px;
     margin: auto;
     font-size: 18px;
+  }
+  /* Page Portfolio */
+  .portfolio-list .portfolio-content {
+    row-gap: 60px;
+    padding: 0px 0px 100px 0px;
   }
 }
 
