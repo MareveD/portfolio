@@ -13420,7 +13420,7 @@ footer .footer-content .footer-copyright {
     padding-top: 40px;
   }
   .single-portfolio-list .single-portfolio-content {
-    padding: 40px 40px;
+    padding: 40px 0px;
   }
   .single-portfolio-list .single-portfolio-content .single-projet {
     flex: 0 0 48.5%;
@@ -13493,6 +13493,14 @@ footer .footer-content .footer-copyright {
   /* Page Portfolio */
   .portfolio-list {
     padding-bottom: 200px;
+  }
+  .overlay .overlay-content {
+    flex-direction: column;
+    padding: 0px 0px;
+  }
+  .overlay .overlay-content img {
+    max-width: 80vw;
+    max-height: 60vh;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -13598,7 +13606,7 @@ footer .footer-content .footer-copyright {
   .header-portfolio .header-content {
     justify-content: flex-start;
     background-attachment: scroll;
-    padding: 100px 40px;
+    padding: 100px 40px 0px 40px;
   }
   .header-portfolio .header-content .content .arrow {
     display: none;
@@ -13623,7 +13631,7 @@ footer .footer-content .footer-copyright {
   .portfolio-list .portfolio-content .pf-graphisme .content .btn-pf-graphisme,
   .portfolio-list .portfolio-content .pf-illustration .content .btn-pf-illustration {
     position: relative;
-    width: 375px;
+    width: 400px;
   }
   .portfolio-list .portfolio-content .pf-web .content .shape,
   .portfolio-list .portfolio-content .pf-graphisme .content .shape,
@@ -13660,6 +13668,20 @@ footer .footer-content .footer-copyright {
   }
   .portfolio-list .portfolio-content .pf-graphisme .content .btn-pf-graphisme {
     left: 0px;
+  }
+  .overlay .overlay-content img {
+    max-width: 90vw;
+  }
+  .overlay .caption {
+    min-width: 90vw;
+    max-width: 80vw;
+    row-gap: 5px;
+  }
+  .overlay .caption p {
+    font-size: 14px;
+  }
+  .overlay .caption .note {
+    font-size: 13px;
   }
 }
 @media screen and (max-width: 820px) {
@@ -13801,6 +13823,9 @@ footer .footer-content .footer-copyright {
     font-size: 18px;
   }
   /* Page Portfolio */
+  .header-portfolio .header-content {
+    padding: 60px 20px 60px 20px;
+  }
   .portfolio-list .portfolio-content {
     row-gap: 60px;
     padding: 0px 0px 100px 0px;
