@@ -2366,3 +2366,14 @@ footer {
         font-size: 30px;
     }
 }
+
+@media screen and (max-width: 450px) {
+
+    .overlay .caption p {
+        font-size: 12px;
+    }
+
+    .overlay .caption .note {
+        font-size: 10px;
+    }
+}
