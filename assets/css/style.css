@@ -13306,6 +13306,10 @@ footer .footer-content .footer-copyright {
   .header-single-portfolio .header-content .content .arrow {
     left: 30px;
   }
+  .header-home .shapes {
+    width: 1000px;
+    height: 1000px;
+  }
   .cta-contact {
     column-gap: 2%;
   }
@@ -13319,11 +13323,60 @@ footer .footer-content .footer-copyright {
     flex-direction: column;
   }
 }
+@media screen and (max-width: 1536px) {
+  .header-home .shapes img {
+    top: 50%;
+    bottom: 50%;
+  }
+  header {
+    min-height: 100vh;
+  }
+  .header-home .shapes {
+    width: 800px;
+    height: 800px;
+  }
+  .header-home .header-content {
+    padding-right: 40px;
+  }
+}
+@media screen and (max-height: 1366px) {
+  .header-home .shapes img {
+    top: 25%;
+    bottom: 50%;
+  }
+  header {
+    min-height: 100vh;
+  }
+  .header-home .shapes {
+    width: 800px;
+    height: 800px;
+  }
+  .header-home .header-content {
+    padding-right: 40px;
+  }
+}
 @media screen and (max-width: 1270px) {
+  h1, .h1 {
+    font-size: 85px;
+  }
   section {
     padding: 60px 40px;
     min-height: auto;
     background-attachment: revert;
+  }
+  .main-navigation .navigation {
+    height: 100vh;
+  }
+  .main-navigation .navigation .header-menu {
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-right: 40px;
+  }
+  .main-navigation .social-media {
+    padding-right: 40px;
+  }
+  .nav-logo .shape {
+    max-width: 100vw;
   }
   .header-home {
     background-attachment: revert;
@@ -13378,16 +13431,6 @@ footer .footer-content .footer-copyright {
     flex: 0 0 48.5%;
   }
   /* accueil header */
-  header {
-    min-height: 100vh;
-  }
-  .header-home .shapes {
-    width: 800px;
-    height: 800px;
-  }
-  .header-home .header-content {
-    padding-right: 40px;
-  }
   /* intro accueil */
   .home-intro .shapes {
     display: none;
@@ -13436,20 +13479,6 @@ footer .footer-content .footer-copyright {
   }
 }
 @media screen and (max-width: 1024px) {
-  .main-navigation .navigation {
-    height: 100vh;
-  }
-  .main-navigation .navigation .header-menu {
-    align-items: flex-end;
-    justify-content: flex-end;
-    padding-right: 40px;
-  }
-  .main-navigation .social-media {
-    padding-right: 40px;
-  }
-  .nav-logo .shape {
-    max-width: 100vw;
-  }
   .header-home .shapes {
     display: none;
   }
