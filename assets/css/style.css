@@ -13729,7 +13729,7 @@ footer .footer-content .footer-copyright {
     width: 350px;
   }
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 768px) {
   .portfolio-list .portfolio-content .pf-web .content .btn-pf-web,
   .portfolio-list .portfolio-content .pf-graphisme .content .btn-pf-graphisme,
   .portfolio-list .portfolio-content .pf-illustration .content .btn-pf-illustration {
@@ -13843,6 +13843,9 @@ footer .footer-content .footer-copyright {
   }
 }
 @media screen and (max-width: 450px) {
+  .overlay .caption br {
+    display: none;
+  }
   .overlay .caption p {
     font-size: 12px;
   }
