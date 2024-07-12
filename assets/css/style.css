@@ -13805,6 +13805,17 @@ footer .footer-content .footer-copyright {
     row-gap: 60px;
     padding: 0px 0px 100px 0px;
   }
+  .portfolio-list .portfolio-content .pf-web .content .arrow .title,
+  .portfolio-list .portfolio-content .pf-graphisme .content .arrow .title,
+  .portfolio-list .portfolio-content .pf-illustration .content .arrow .title {
+    row-gap: 10px;
+    padding-top: 5px;
+  }
+  .portfolio-list .portfolio-content .pf-web .content .arrow .title .section-title,
+  .portfolio-list .portfolio-content .pf-graphisme .content .arrow .title .section-title,
+  .portfolio-list .portfolio-content .pf-illustration .content .arrow .title .section-title {
+    font-size: 30px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
