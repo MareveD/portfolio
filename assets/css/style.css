@@ -14034,7 +14034,7 @@ footer .footer-content .footer-copyright {
   .portfolio-list .portfolio-content .pf-graphisme .content .btn-pf-graphisme,
   .portfolio-list .portfolio-content .pf-illustration .content .btn-pf-illustration {
     position: relative;
-    width: 400px;
+    width: 300px;
   }
   .portfolio-list .portfolio-content .pf-web .content .shape,
   .portfolio-list .portfolio-content .pf-graphisme .content .shape,
@@ -14072,12 +14072,16 @@ footer .footer-content .footer-copyright {
   .portfolio-list .portfolio-content .pf-graphisme .content .btn-pf-graphisme {
     left: 0px;
   }
+  .overlay .overlay-content {
+    flex-direction: row;
+    padding: 40px;
+  }
   .overlay .overlay-content img {
-    max-width: 90vw;
+    max-width: none;
+    flex: 1;
   }
   .overlay .caption {
-    min-width: 90vw;
-    max-width: 80vw;
+    flex: 1;
     row-gap: 5px;
   }
   .overlay .caption p {
