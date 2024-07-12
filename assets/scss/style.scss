@@ -1290,7 +1290,6 @@ section {
 /* ------------------------------------------------------------ */
 
 /* Page Expertise - Logiciel */
-
 .stacks {
     display: flex;
     flex-direction: row;
@@ -1320,7 +1319,6 @@ section {
 /* ------------------------------------------------------------ */
 
 /* Page Contact */
-
 .section-contact {
     position: relative;
     z-index: 1;
@@ -1373,7 +1371,6 @@ section {
 /* ------------------------------------------------------------ */
 
 /* CTA - Contact */
-
 .cta-contact {
     display: flex;
     flex-direction: row;
@@ -1417,7 +1414,6 @@ section {
 /* ------------------------------------------------------------ */
 
 /* CTA - Follow */
-
 .cta-follow {
     display: flex;
     flex-direction: row;
@@ -1488,7 +1484,6 @@ section {
 /* ------------------------------------------------------------ */
 
 /* CTA CV */
-
 .cta-cv {
     min-height: auto;
     padding: 120px 0px;
@@ -1501,7 +1496,6 @@ section {
 /* ------------------------------------------------------------ */
 
 /* Footer */
-
 footer {
     position: relative;
     display: flex;
@@ -1619,6 +1613,13 @@ footer {
 
 /* RESPONSIVE */
 @media screen and (max-width: 1700px) {
+    .header-home {
+        .shapes {
+            width: 1000px;
+            height: 1000px;
+        }
+    }
+
     .header-single-portfolio {
         .shapes {
             top: -50%;
@@ -1633,13 +1634,6 @@ footer {
                     left: 30px;
                 }
             }
-        }
-    }
-
-    .header-home {
-        .shapes {
-            width: 1000px;
-            height: 1000px;
         }
     }
 
@@ -1658,6 +1652,11 @@ footer {
                 flex-direction: column;
             }
         }
+    }
+
+    /* Page A propos */
+    .apropos-intro .intro-content .arrow {
+        display: none;
     }
 }
 
@@ -1702,6 +1701,12 @@ footer {
 
     header {
         min-height: 100vh;
+    }
+
+    /* Page A propos */
+    .soft-skills {
+        padding: 0px 40px;
+        flex-wrap: wrap;
     }
 }
 

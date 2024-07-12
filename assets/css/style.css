@@ -13297,6 +13297,10 @@ footer .footer-content .footer-copyright {
 /* ------------------------------------------------------------ */
 /* RESPONSIVE */
 @media screen and (max-width: 1700px) {
+  .header-home .shapes {
+    width: 1000px;
+    height: 1000px;
+  }
   .header-single-portfolio .shapes {
     top: -50%;
     left: -1%;
@@ -13306,10 +13310,6 @@ footer .footer-content .footer-copyright {
   }
   .header-single-portfolio .header-content .content .arrow {
     left: 30px;
-  }
-  .header-home .shapes {
-    width: 1000px;
-    height: 1000px;
   }
   .cta-contact {
     column-gap: 2%;
@@ -13322,6 +13322,10 @@ footer .footer-content .footer-copyright {
     padding-right: 0;
     row-gap: 10px;
     flex-direction: column;
+  }
+  /* Page A propos */
+  .apropos-intro .intro-content .arrow {
+    display: none;
   }
 }
 @media screen and (max-width: 1536px) {
@@ -13354,6 +13358,11 @@ footer .footer-content .footer-copyright {
   }
   header {
     min-height: 100vh;
+  }
+  /* Page A propos */
+  .soft-skills {
+    padding: 0px 40px;
+    flex-wrap: wrap;
   }
 }
 @media screen and (max-width: 1270px) {
