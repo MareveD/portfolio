@@ -2009,6 +2009,10 @@ footer {
     .section-contact .shapes {
         display: none;
     }
+
+    .cta-cv {
+        padding: 60px 40px;
+    }
 }
 
 @media screen and (max-width: 820px) {
@@ -2148,6 +2152,10 @@ footer {
     }
 
     section {
+        padding: 40px 20px;
+    }
+
+    .cta-cv {
         padding: 40px 20px;
     }
 

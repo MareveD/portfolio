@@ -13587,6 +13587,9 @@ footer .footer-content .footer-copyright {
   .section-contact .shapes {
     display: none;
   }
+  .cta-cv {
+    padding: 60px 40px;
+  }
 }
 @media screen and (max-width: 820px) {
   h1, .h1 {
@@ -13673,6 +13676,9 @@ footer .footer-content .footer-copyright {
     min-height: 50vh;
   }
   section {
+    padding: 40px 20px;
+  }
+  .cta-cv {
     padding: 40px 20px;
   }
   .btn-arrow {
