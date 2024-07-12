@@ -13872,6 +13872,9 @@ footer .footer-content .footer-copyright {
   }
 }
 @media screen and (max-width: 1024px) and (orientation: landscape) {
+  section {
+    padding: 40px 40px;
+  }
   .header-home .shapes {
     display: none;
   }
@@ -13971,10 +13974,13 @@ footer .footer-content .footer-copyright {
     padding: 60px 40px;
   }
   /* Page portfolio */
+  .header-single-portfolio .header-content {
+    padding: 60px 40px 0 40px;
+  }
   .header-portfolio .header-content {
     justify-content: flex-start;
     background-attachment: scroll;
-    padding: 100px 40px 0px 40px;
+    padding: 60px 40px 0px 40px;
   }
   .header-portfolio .header-content .content .arrow {
     display: none;
