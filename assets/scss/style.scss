@@ -2456,3 +2456,269 @@ footer {
       }
     }
 }
+
+@media screen and (max-width: 960px) and (orientation: landscape) {
+
+    .main-navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        .navigation {
+            row-gap: 20px;
+            padding: 20px 25px 20px 0px;
+            justify-content: flex-end;
+        }
+
+        .shape {
+            display: none;
+        }
+
+        .nav-logo {
+            position: relative;
+            top: 0px;
+            left: 0px;
+            width: 100vw;
+
+            .logo {
+                position: relative;
+                left: 50px;
+                top: 240px;
+            }
+        }
+    }
+
+    .main-navigation .navigation .header-menu {
+        flex-direction: row;
+        height: fit-content;
+        column-gap: 20px;
+    }
+
+    .main-navigation .navigation .header-menu a {
+        font-size: 35px;
+    }
+
+    .header-home {
+      .shapes {
+        display: none;
+      }
+      .header-content {
+        justify-content: flex-start;
+        padding: 60px 40px;
+        
+        .content {
+          width: 100%;
+        }
+      }
+    }
+  
+    .home-intro {
+      .container {
+        padding: 0;
+      }
+      .intro-content {
+        width: 100%;
+        padding-top: 0;
+      }
+      .portrait {
+        display: none;
+      }
+    }
+  
+    .btn-arrow {
+      span.arrow {
+        display: none;
+      }
+    }
+  
+    .home-portfolio {
+      .content {
+        align-items: center;
+      }
+    }
+  
+    /* entete generale */
+    .header-gen {
+      .shapes {
+        display: none;
+      }
+      .header-content {
+        justify-content: flex-start;
+        clip-path: none;
+        padding: 120px 40px;
+        .content {
+          width: 100%;
+          .arrow {
+            display: none;
+          }
+        }
+      }
+    }
+  
+    /* page A propos */
+    .section-texte {
+      flex-direction: column !important;
+      .section-texte-image {
+        display: none;
+      }
+      .arrow {
+        display: none;
+      }
+    }
+  
+    .section-texte.texte-droite .content {
+      padding-right: 0;
+    }
+  
+    .section-texte.texte-gauche .content {
+      padding-left: 0;
+    }
+  
+    .soft-skills {
+      padding: 0 40px;
+      flex-wrap: wrap;
+      row-gap: 20px;
+      position: relative;
+      top: -100px;
+      .skill {
+        flex: 0 0 32%;
+      }
+    }
+  
+    .apropos-intro {
+      .portrait {
+        display: none;
+      }
+      .intro-content {
+        width: 100%;
+        padding-top: 0;
+        .je-suis {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+    }
+  
+    .stacks {
+      display: flex;
+      flex-direction: column;
+      column-gap: 8%;
+      width: 100%;
+    }
+  
+    /* Page Contact */
+    .section-contact {
+      .contact-content {
+        padding-top: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+      }
+      .shapes {
+        display: none;
+      }
+    }
+  
+    .cta-cv {
+      padding: 60px 40px;
+    }
+  
+    /* Page portfolio */
+    .header-portfolio {
+      .header-content {
+        justify-content: flex-start;
+        background-attachment: scroll;
+        padding: 100px 40px 0;
+        .content {
+          .arrow {
+            display: none;
+          }
+        }
+      }
+      .shapes {
+        display: none;
+      }
+    }
+  
+    .portfolio-list {
+      padding-bottom: 0;
+      .portfolio-content {
+        row-gap: 100px;
+        max-width: 1000px;
+        padding-bottom: 200px;
+        .pf-web .content,
+        .pf-graphisme .content,
+        .pf-illustration .content {
+          align-items: center;
+        }
+        .content {
+          flex-direction: row;
+          .btn-pf-web,
+          .btn-pf-graphisme,
+          .btn-pf-illustration {
+            position: relative;
+            width: 400px;
+          }
+          .shape {
+            display: none;
+          }
+          .arrow {
+            width: 100%;
+            .arrow-shape {
+              width: 300px;
+            }
+            .title {
+              &.pf-web,
+              &.pf-illustration {
+                align-items: flex-start;
+                left: 0;
+              }
+              &.pf-graphisme {
+                align-items: flex-end;
+                right: 0;
+              }
+            }
+            &.pf-graphisme {
+              left: 0;
+              right: 0;
+              justify-content: flex-end;
+              align-items: flex-end;
+            }
+          }
+        }
+      }
+    }
+  
+    .overlay {
+
+        .overlay-content {
+            flex-direction: row;
+        }
+
+      .overlay-content img {
+        flex: 1;
+        padding-left: 20px;
+      }
+      .caption {
+        flex: 1;
+        padding-right: 20px;
+        row-gap: 5px;
+        p {
+          font-size: 12px;
+        }
+        .note {
+          font-size: 10px;
+        }
+        br {
+            display: none;
+        }
+        h3 {
+            font-size: 30px;
+        }
+        h5 {
+            font-size: 20px;
+        }
+      }
+    }
+}
