@@ -13875,6 +13875,35 @@ footer .footer-content .footer-copyright {
   section {
     padding: 40px 40px;
   }
+  .main-navigation .nav-logo {
+    top: 25px;
+    left: 25px;
+  }
+  .main-navigation .nav-logo .logo {
+    position: relative;
+    top: 0px;
+    max-width: 200px;
+  }
+  .main-navigation .navigation {
+    padding: 20px 25px 20px 20px;
+    justify-content: flex-end;
+    row-gap: 20px;
+  }
+  .main-navigation .social-media {
+    padding-right: 20px;
+  }
+  .main-navigation .navigation .header-menu {
+    padding-right: 20px;
+    flex-direction: row;
+    column-gap: 20px;
+    height: fit-content;
+  }
+  .main-navigation .navigation .header-menu a {
+    font-size: 30px;
+  }
+  .nav-logo .shape {
+    display: none;
+  }
   .header-home .shapes {
     display: none;
   }
