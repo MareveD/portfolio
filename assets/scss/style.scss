@@ -1917,6 +1917,42 @@ footer {
             align-items: center;
         }
     }
+
+    /* page A propos */
+    .section-texte {
+        flex-direction: column !important;
+        .section-texte-image {
+            display: none;
+        }
+        .arrow{
+            display: none;
+        }
+    }
+    .section-texte.texte-droite .content {
+        padding-right: 0px;
+    }
+    .section-texte.texte-gauche .content {
+        padding-left: 0px;
+    }
+
+    .soft-skills {
+        padding: 0px 40px;
+        flex-wrap: wrap;
+        row-gap: 20px;
+        position: relative;
+        top: -100px;
+
+        .skill {
+            flex: 0 0 32%;
+        }
+    }
+    .apropos-intro .portrait {
+        display: none;
+    }
+
+    .apropos-intro .intro-content {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 820px) {
