@@ -194,3 +194,32 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+/* ------------------------------------------------------------------------------ */
+
+/* CTA template */
+
+document.addEventListener("DOMContentLoaded", () => {
+    const loadTemplate = (url, containerId) => {
+        fetch(url)
+            .then(response => response.text())
+            .then(data => {
+                const container = document.getElementById(containerId);
+                container.innerHTML += data;
+
+                // Optionally, you can move the template content to the container
+                const template = container.querySelector('template');
+                if (template) {
+                    const clone = document.importNode(template.content, true);
+                    container.appendChild(clone);
+                    template.remove(); // Remove the template tag if you no longer need it
+                }
+            })
+            .catch(error => console.error('Error loading template:', error));
+    };
+
+    // Load your templates into the main HTML file
+    loadTemplate('cta-contact.html', 'cta-container');
+    loadTemplate('cta-newsletter.html', 'cta-container');
+});
+
