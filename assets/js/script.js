@@ -167,12 +167,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
 /* Galerie d'images */
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const voirPlusBtns = document.querySelectorAll(".single-projet");
     const closeBtns = document.querySelectorAll(".close-btn");
-    
+
     voirPlusBtns.forEach(btn => {
-        btn.addEventListener("click", function() {
+        btn.addEventListener("click", function () {
             const overlayId = btn.closest(".single-projet").getAttribute("data-overlay");
             const overlay = document.getElementById(overlayId);
             overlay.style.display = "flex";
@@ -180,14 +180,14 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     closeBtns.forEach(btn => {
-        btn.addEventListener("click", function() {
+        btn.addEventListener("click", function () {
             btn.closest(".overlay").style.display = "none";
         });
     });
 
     // Close overlay when clicking outside of content
     document.querySelectorAll(".overlay").forEach(overlay => {
-        overlay.addEventListener("click", function(event) {
+        overlay.addEventListener("click", function (event) {
             if (event.target === overlay) {
                 overlay.style.display = "none";
             }
@@ -196,30 +196,3 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 /* ------------------------------------------------------------------------------ */
-
-/* CTA template */
-
-document.addEventListener("DOMContentLoaded", () => {
-    const loadTemplate = (url, containerId) => {
-        fetch(url)
-            .then(response => response.text())
-            .then(data => {
-                const container = document.getElementById(containerId);
-                container.innerHTML += data;
-
-                // Optionally, you can move the template content to the container
-                const template = container.querySelector('template');
-                if (template) {
-                    const clone = document.importNode(template.content, true);
-                    container.appendChild(clone);
-                    template.remove(); // Remove the template tag if you no longer need it
-                }
-            })
-            .catch(error => console.error('Error loading template:', error));
-    };
-
-    // Load your templates into the main HTML file
-    loadTemplate('cta-contact.html', 'cta-container');
-    loadTemplate('cta-newsletter.html', 'cta-container');
-});
-
